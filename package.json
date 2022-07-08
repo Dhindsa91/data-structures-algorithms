@@ -1,0 +1,20 @@
+{
+  "name": "data-structures-and-algorithms-js",
+  "version": "0.0.1",
+  "description": "algorithms and data structures prep",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dhindsa91/DataStructures_Algorithms.git"
+  },
+  "author": "Arvind Dhindsa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dhindsa91/DataStructures_Algorithms/issues"
+  },
+  "homepage": "https://github.com/Dhindsa91/DataStructures_Algorithms#readme"
+}
