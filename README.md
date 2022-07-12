@@ -10,6 +10,7 @@ Interview DS, Algo prep
 ### Trees
 - BFS
 - InOrder, PostOrder (DFS), PreOrder
+- Tries
 
 ### LinkedLists 
 - Doubly Linked
