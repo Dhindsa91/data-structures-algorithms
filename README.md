@@ -19,6 +19,7 @@ Interview DS, Algo prep
 ### Arrays
 
 ### Heaps & Stack & Queue & HashMap
+- Priority Queue
 
 ### Sorting
 - QuickSort
