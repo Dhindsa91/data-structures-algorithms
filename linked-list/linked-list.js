@@ -28,7 +28,13 @@ export class LinkedList {
         } else {
             this.recursiveAppendNode(val, head.next)
         }
-    
+    }
+
+    print(head){
+        if(!head) return;
+
+        console.log(head.val);
+        this.print(head.next);
     }
 
 }
