@@ -1,6 +1,6 @@
-import { backtrack } from "./backtracking.js";
-import { howSum } from "./howSum.js";
-import { allSums } from "./allSums.js";
+import { backtrack } from "../backtracking.js";
+import { howSum } from "../howSum.js";
+import { allSums } from "../allSums.js";
 
 const arr = [1, 2, 3, 4];
 
