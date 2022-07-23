@@ -1,49 +1,31 @@
-function merge(arr, l, m, r) {
-    let n1 = m - l + 1;
-    let n2 = r - m;
-    console.log(n1);
-    console.log(n2);
- 
+function merge(arr, l, m, r) { 
     /* Create temp arrays */
-    let L = new Array(n1);
-    let R = new Array(n2);
-
     /*Copy data to temp arrays*/
-    for (let i = 0; i < n1; ++i)
-        L[i] = arr[l + i];
-    for (let j = 0; j < n2; ++j)
-        R[j] = arr[m + 1 + j];
-
-    /* Merge the temp arrays */
-
-    // Initial indexes of first and second subarrays
-    let i = 0, j = 0;
-
-    // Initial index of merged subarray array
+    let L = arr.slice(l, m + 1);
+    let R = arr.slice(m + 1, r + 1);
     let k = l;
-    while (i < n1 && j < n2) {
-        if (L[i] <= R[j]) {
-            arr[k] = L[i];
-            i++;
+   
+    while (L.length && R.length) {
+        if (L[0] <= R[0]) {
+            arr[k] = L.shift();
         }
         else {
-            arr[k] = R[j];
-            j++;
+            arr[k] = R.shift();
         }
         k++;
     }
 
+    debugger
+ 
     /* Copy remaining elements of L[] if any */
-    while (i < n1) {
-        arr[k] = L[i];
-        i++;
+    while (L.length) {
+        arr[k] = L.shift();
         k++;
     }
 
     /* Copy remaining elements of R[] if any */
-    while (j < n2) {
-        arr[k] = R[j];
-        j++;
+    while (R.length) {
+        arr[k] = R.shift();
         k++;
     }
 }
