@@ -69,3 +69,18 @@ class Node {
     this.val = val;
   }
 }
+
+export function buildTree() {
+  const tree = new Tree();
+  tree.insert(50, tree.root);
+  tree.insert(25, tree.root);
+  tree.insert(75, tree.root);
+  tree.insert(15, tree.root);
+  tree.insert(40, tree.root);
+  tree.insert(60, tree.root);
+  tree.insert(80, tree.root);
+  tree.insert(10, tree.root);
+  tree.insert(20, tree.root);
+
+  return tree;
+}
