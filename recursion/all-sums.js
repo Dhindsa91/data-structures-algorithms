@@ -1,5 +1,4 @@
 export function allSums(arr, index, target){
-    // debugger;
     if(target === 0)  return [[]];
 
     if(target < 0) return undefined;

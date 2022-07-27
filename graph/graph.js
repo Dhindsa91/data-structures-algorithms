@@ -85,6 +85,5 @@ export default class Graph {
         stack.push(vertex);
       }
 
-
-
 }
+
