@@ -1,5 +1,4 @@
 export function binarySearch(arr, left, right, search){
-    debugger
     if(left > right) return false;
 
     const middle = Math.floor((left + right)/2)

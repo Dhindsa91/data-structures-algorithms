@@ -34,7 +34,7 @@ export function mergeSort(arr, l, r) {
 
   if (l < r) {
     // recursively split the array
-    const m = Math.floor((l + (r - 1)) / 2);
+    const m = Math.floor((l + r) / 2);
     mergeSort(arr, l, m);
     mergeSort(arr, m + 1, r);
 

@@ -37,6 +37,17 @@ export class LinkedList {
         this.print(head.next);
     }
 
+    reverseList(head){
+        return this.reverseUtil(head, null);
+    }
+
+    reverseUtil(head, next){
+        if(head === null) return next;
+        let temp = head.next;
+        head.next = next;
+        return this.reverseUtil(temp, head)
+    }
+
 }
 
 class Node {
