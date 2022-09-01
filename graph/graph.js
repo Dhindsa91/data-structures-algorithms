@@ -15,7 +15,6 @@ export default class Graph {
         visited[vertex] = true;
         let q = [];
         q.push(vertex)
-
         // iterate
         while(q.length){
             let current = q.shift();
