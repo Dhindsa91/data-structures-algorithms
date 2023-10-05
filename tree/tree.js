@@ -31,7 +31,7 @@ export class Tree {
   }
 
   // DFS
-  preOrderTraversal(node) {
+  preOrderTraversal(node = this.root) {
     if (!node) return;
 
     console.log(node.val);
@@ -43,7 +43,7 @@ export class Tree {
    * Figure 1 Traversal
    *
    */
-  postOrderTraversal(node) {
+  postOrderTraversal(node = this.root) {
     if (!node) return;
 
     this.postOrderTraversal(node.left);
@@ -51,7 +51,7 @@ export class Tree {
     console.log(node.val);
   }
 
-  inOrderTraversal(node) {
+  inOrderTraversal(node = this.root) {
     if (!node) return;
 
     this.inOrderTraversal(node.left);
@@ -77,10 +77,11 @@ export function buildTree() {
   tree.insert(75, tree.root);
   tree.insert(15, tree.root);
   tree.insert(40, tree.root);
-  tree.insert(60, tree.root);
-  tree.insert(80, tree.root);
   tree.insert(10, tree.root);
   tree.insert(20, tree.root);
+  tree.insert(100, tree.root);
 
   return tree;
 }
+
+const tree = buildTree();
